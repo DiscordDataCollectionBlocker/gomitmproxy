@@ -652,6 +652,10 @@ func (p *Proxy) canMITM(hostname string) bool {
 		return false
 	}
 
+	if !strings.Contains(hostname, "discordapp") && !strings.Contains(hostname, "discord.gg") {
+		return false
+	}
+
 	// Remove the port if it exists.
 	host, port, err := net.SplitHostPort(hostname)
 	if err == nil {
