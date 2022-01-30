@@ -1,4 +1,4 @@
-module github.com/github.com/DiscordDataCollectionBlocker/gomitmproxy
+module github.com/DiscordDataCollectionBlocker/gomitmproxy
 
 go 1.14
 
